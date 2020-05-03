@@ -1,0 +1,11 @@
+version: '2'
+services:
+  enginservitude-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/enginServitude/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=enginServitude
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
